@@ -16,6 +16,9 @@
 # Basically, max at index i = max(value[i], value[i] + max at index i-1)
 # storing max at index i-1 as localMax basically
 
+# Time: O(n) where n = num of nums
+# Space: O(1)
+
 class Solution:
     def maxSubarray(nums):
         length = len(nums)
