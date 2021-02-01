@@ -8,7 +8,7 @@
 # Interview tip: Use an array when you need data in an ordered list with fast indexing or compact memory footprint. Don’t use an array if you need to search for unsorted items efficiently or insert and remove items frequently
 
 
-class Array(object):
+class Array:
     ''' sizeofArray: denotes the total size of the array to be initialized
         arrayType: denotes the data type of the array (as all the elements of the array have the same data type)
         arrayItems: values at each position of an array

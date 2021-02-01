@@ -4,9 +4,9 @@
 # - Addition & removal from the same end (typically called the 'top end')
 # - Closer to the base = been in stack longest
 # - Can be used to reverse order of items (order of insertion = reverse(order of removal)
-# - good for balanced symbols/paranthesis check, easily converting integer to binary
+# - good for balanced symbols/paranthesis check, easily converting integer to binary, infix -> post/pre-fix conversion & evaluation
 
-class Stack(object):
+class Stack:
 
     def __init__(self, limit = 10):
         self.stack = []
@@ -34,9 +34,8 @@ class Stack(object):
 
 # - FIFO - First In First Out
 # - Items added to one end (typically called 'rear') and removed from other end (typically called 'front')
-# -
 
-class Queue(object):
+class Queue:
 
     def __init__(self, limit = 10):
         self.queue = []
@@ -57,6 +56,10 @@ class Queue(object):
     def size(self):
         return len(self.queue)
 
+# Deque
+
+# - Addition/removal from front and rear
+# - Good for palindrom checks
 
 if __name__ == "__main__":
 
