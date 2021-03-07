@@ -59,7 +59,7 @@ class Queue:
 # Deque
 
 # - Addition/removal from front and rear
-# - Good for palindrom checks
+# - Good for palindrome checks
 
 if __name__ == "__main__":
 
