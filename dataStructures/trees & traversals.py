@@ -39,21 +39,33 @@ class BinaryTree:
         if self.rightChild:
             self.rightChild.preorder()
 
-    def postorder(tree):
-        if tree != None:
-            postorder(tree.getLeftChild())
-            postorder(tree.getRightChild())
-            print(tree.getRootVal())
+    def postorder(self):
+        if self.leftChild:
+            self.leftChild.preorder()
+        if self.rightChild:
+            self.rightChild.preorder()
+        print(self.key)
+
+    def inorder(self):
+        if self.leftChild:
+            self.leftChild.inorder()
+        print(self.key)
+        if self.rightChild:
+            self.rightChild.inorder()
 
 
-t = BinaryTree('a')
-t.insertRight('c')
-t.insertLeft('b')
-(t.getLeftChild()).insertLeft('d')
-(t.getLeftChild()).insertLeft('e')
-(t.getLeftChild()).insertLeft('f')
+r = BinaryTree('a')
+r.insertLeft('b')
+r.insertRight('c')
+# r.getRightChild().
 
-t.preorder()
+
+print('pre=')
+r.preorder()
+print('post=')
+r.postorder()
+print('in=')
+r.inorder()
 
 
 
