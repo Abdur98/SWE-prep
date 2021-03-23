@@ -166,7 +166,7 @@ def recursive_topological_sort(graph, node):
     recursive_helper(node)
     return result
 
-    We can now describe the algorithm to compute the strongly connected components for a graph.
+    # We can now describe the algorithm to compute the strongly connected components for a graph.
 
 # Strongly connected components (SCC)
 # Call dfs for the graph 𝐺 to compute the finish times for each vertex.
